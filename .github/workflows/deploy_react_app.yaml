@@ -33,7 +33,9 @@ jobs:
       run: npm install   
     - name: run react app instance
       run: npm run build
+    - name: enter build folder  
       run: cd build
+    - name: change name of index.html to 200.html  
       run: cp index.html 200.html
     - name: run surge
       run: surge ./ gentlemencatlumber.surge.sh --token ${{secrets.MY_SURGE_TOKEN}}
