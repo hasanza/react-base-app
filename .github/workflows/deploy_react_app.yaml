@@ -35,6 +35,8 @@ jobs:
       run: npm run build
     - name: enter build folder  
       run: cd build
+    - name: enter build folder again
+      run: cd build
     - name: show all files
       run: ls  
     - name: change name of index.html to 200.html  
