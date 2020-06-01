@@ -30,7 +30,9 @@ jobs:
     - name: install surge
       run: npm install -g surge
     - name: install create-react-app  
-      run: npm install -g create-react-app 
+      run: npm install -g create-react-app
+    - name: install all dependencies
+      run: npm install   
     - name: run react app instance
       run: npm start
     - name: run surge
