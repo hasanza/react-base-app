@@ -42,4 +42,4 @@ jobs:
       working-directory: ./build
       run: ls
     - name: run surge
-      run: surge ./ gentlemencatlumber.surge.sh --token ${{secrets.MY_SURGE_TOKEN}}
+      run: surge ./ gentlemencatlumbers.surge.sh --token ${{secrets.MY_SURGE_TOKEN}}
