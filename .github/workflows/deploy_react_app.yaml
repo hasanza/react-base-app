@@ -29,11 +29,9 @@ jobs:
         node-version: 12
     - name: install surge
       run: npm install -g surge
-    - name: install create-react-app  
-      run: npm install -g create-react-app
     - name: install all dependencies
       run: npm install   
     - name: run react app instance
-      run: npm start
+      run: npm run build
     - name: run surge
       run: surge ./ gentlemencatlumber.surge.sh --token ${{secrets.MY_SURGE_TOKEN}}
