@@ -40,5 +40,6 @@ jobs:
       run: cp index.html 200.html
     - name: show files
       working-directory: ./build
+      run: ls
     - name: run surge
       run: surge ./ gentlemencatlumber.surge.sh --token ${{secrets.MY_SURGE_TOKEN}}
