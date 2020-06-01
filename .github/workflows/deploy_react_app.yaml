@@ -38,5 +38,7 @@ jobs:
     - name: change name of index.html to 200.html
       working-directory: ./build  
       run: cp index.html 200.html
+    - name: show files
+      working-directory: ./build
     - name: run surge
       run: surge ./ gentlemencatlumber.surge.sh --token ${{secrets.MY_SURGE_TOKEN}}
