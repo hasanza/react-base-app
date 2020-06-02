@@ -4,9 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const Hi = () => {
+  return <div>Hello There!
+    <p>Its getting crazy up in here!</p>
+  </div>
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Hi />
   </React.StrictMode>,
   document.getElementById('root')
 );
