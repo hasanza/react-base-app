@@ -40,6 +40,6 @@ jobs:
       uses: dswistowski/surge-sh-action@v1
       with:
         domain: 'marikopolo.surge.sh'
-        project: './build/'
+        project: './build'
         login: 'hassanrazza1@gmail.com'
         token: ${{ secrets.surge_token }}
