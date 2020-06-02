@@ -36,7 +36,7 @@ jobs:
     - name: Deploy to surge
       uses: dswistowski/surge-sh-action@v1
       with:
-        domain: 'adhesive-night.surge.sh'
+        domain: 'marikopolo.surge.sh'
         project: './build/'
         login: 'hassanrazza1@gmail.com'
         token: ${{ secrets.surge_token }}
