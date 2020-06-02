@@ -38,3 +38,5 @@ jobs:
       run: mv index.html 200.html  
     - name: Run Surge
       run: surge ./ gentlemencatlumber.surge.sh --token ${{secrets.MY_SURGE_TOKEN}}
+    - name: show files
+      run: ls
