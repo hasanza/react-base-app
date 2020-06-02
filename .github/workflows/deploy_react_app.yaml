@@ -33,6 +33,8 @@ jobs:
       run: npm install   
     - name: run react app instance
       run: npm run build
+    - name: change index.html to 200.html
+      run: cp index.html 200.html  
     - name: Deploy to surge
       uses: dswistowski/surge-sh-action@v1
       with:
