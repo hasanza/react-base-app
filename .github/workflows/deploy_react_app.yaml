@@ -35,11 +35,11 @@ jobs:
       run: npm run build
     - name: change index.html to 200.html
       working-directory: './build'
-      run: cp index.html 404.html  
+      run: mv index.html 200.html  
     - name: Deploy to surge
       uses: dswistowski/surge-sh-action@v1
       with:
         domain: 'marikopolo.surge.sh'
-        project: './build'
+        project: '.'
         login: 'hassanrazza1@gmail.com'
         token: ${{ secrets.surge_token }}
