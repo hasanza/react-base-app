@@ -40,4 +40,5 @@ jobs:
       working-directory: './build'
       run: surge ./ gentlemencatlumber.surge.sh --token ${{secrets.MY_SURGE_TOKEN}}
     - name: show files
+      working-directory: './build'
       run: ls
