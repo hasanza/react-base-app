@@ -10,9 +10,11 @@ const Hi = () => {
   </div>
 }
 
+
 ReactDOM.render(
   <React.StrictMode>
     <Hi />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
