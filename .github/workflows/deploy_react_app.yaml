@@ -36,10 +36,5 @@ jobs:
     - name: change index.html to 200.html
       working-directory: './build'
       run: mv index.html 200.html  
-    - name: Deploy to surge
-      uses: dswistowski/surge-sh-action@v1
-      with:
-        domain: 'marikopolo.surge.sh'
-        project: '.'
-        login: 'hassanrazza1@gmail.com'
-        token: ${{ secrets.surge_token }}
+    - name: Run Surge
+      run: surge surge ./ gentlemencatlumber.surge.sh --token ${{secrets.MY_SURGE_TOKEN}}
