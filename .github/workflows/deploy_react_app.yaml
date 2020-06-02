@@ -33,13 +33,10 @@ jobs:
       run: npm install   
     - name: run react app instance
       run: npm run build
-    - name: show all files
-      run: ls  
-    - name: change name of index.html to 200.html
-      working-directory: ./build  
-      run: cp index.html 200.html
-    - name: show files
-      working-directory: ./build
-      run: ls
-    - name: run surge
-      run: surge ./ gentlemencatlumbers.surge.sh --token ${{secrets.MY_SURGE_TOKEN}}
+    - name: Deploy to surge
+      uses: dswistowski/surge-sh-action@v1
+      with:
+        domain: 'adhesive-night.surge.sh'
+        project: './build/'
+        login: 'hassanrazza1@gmail.com'
+        token: ${{ secrets.surge_token }}
